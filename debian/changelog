@@ -1,0 +1,42 @@
+node-p-is-promise (3.0.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.4.1
+  * New upstream version 3.0.0
+  * Add "Rules-Requires-Root: no"
+  * Switch upstream test from ava to tape
+  * Enable upstream test
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 21 Oct 2019 22:45:28 +0200
+
+node-p-is-promise (2.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.0
+  * Add debian/gbp.conf
+  * Switch install to pkg-js-tools
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 03 Aug 2019 15:43:45 +0200
+
+node-p-is-promise (2.0.0-1) unstable; urgency=medium
+
+  [ Manas Kashyap ]
+  * New Upstream Release
+  * Standard version updated
+  * Debhelper version bumped
+
+  [ Xavier Guimard ]
+  * Declare compliance with policy 4.3.0
+  * Add upstream/metadata
+  * Switch minimal test to pkg-js-tools
+  * Fix debian/copyright
+  * Add Multi-Arch: foreign
+
+ -- Manas Kashyap <manaskashyaptech@gmail.com>  Mon, 04 Mar 2019 07:03:56 +0100
+
+node-p-is-promise (1.1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #885723)
+
+ -- Manas kashyap <manaskashyaptech@gmail.com>  Fri, 29 Dec 2017 14:21:21 +0000

@@ -1,0 +1,31 @@
+Description: switch test from ava to tape
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2019-10-21
+
+--- a/test.js
++++ b/test.js
+@@ -1,6 +1,6 @@
+-import test from 'ava';
+-import Bluebird from 'bluebird';
+-import isPromise from '.';
++const test = require('tape');
++const Bluebird = require('bluebird');
++const isPromise = require('.');
+ 
+ test('main', t => {
+ 	t.true(isPromise(Promise.resolve()));
+@@ -26,6 +26,7 @@
+ 	t.false(isPromise('🦄'));
+ 	t.false(isPromise(0));
+ 	t.false(isPromise(true));
++	t.end();
+ });
+ 
+ test('function', t => {
+@@ -33,4 +34,5 @@
+ 	fixture.then = () => {};
+ 	fixture.catch = () => {};
+ 	t.true(isPromise(fixture));
++	t.end();
+ });
