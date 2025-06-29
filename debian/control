@@ -5,12 +5,11 @@ Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.deb
 Uploaders: Manas Kashyap <manaskashyaptech@gmail.com>
 Testsuite: autopkgtest-pkg-nodejs
 Build-Depends:
- debhelper-compat (= 12)
+ debhelper-compat (= 13)
  , node-bluebird <!nocheck>
  , node-tape <!nocheck>
- , nodejs
- , pkg-js-tools (>= 0.8.8)
-Standards-Version: 4.4.1
+ , dh-sequence-nodejs
+Standards-Version: 4.6.0
 Homepage: https://github.com/sindresorhus/p-is-promise#readme
 Vcs-Git: https://salsa.debian.org/js-team/node-p-is-promise.git
 Vcs-Browser: https://salsa.debian.org/js-team/node-p-is-promise
@@ -19,9 +18,7 @@ Rules-Requires-Root: no
 Package: node-p-is-promise
 Architecture: all
 Multi-Arch: foreign
-Depends:
- ${misc:Depends}
- , nodejs
+Depends: ${misc:Depends}
 Description: Check if something is a promise
  Just pass your value to Promise.resolve() and let it handle it.
  .
